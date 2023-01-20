@@ -9,7 +9,6 @@ var server = http.createServer(app);
 const Room = require('./models/room.js')
 var io = require('socket.io')(server);
 // Middleware (Data coming from client side can be manipulated before going to Server)
-// Client -> Middle ware -> Server
 app.use(express.json());
 
 const DB ="mongodb+srv://Shivam:Shivam@cluster0.haxsiko.mongodb.net/?retryWrites=true&w=majority";
